@@ -31,5 +31,8 @@ namespace ModdingTools.Headless
 
         [Option("nologo", HelpText = "Hide banner", Default = false)]
         public bool NoLogo { get; set; }
+
+        [Option("alwaysloaded", HelpText = "Enable AlwaysLoaded workaround", Default = false)]
+        public bool AlwaysLoaded { get; set; }
     }
 }

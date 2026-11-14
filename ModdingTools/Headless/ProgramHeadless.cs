@@ -187,6 +187,7 @@ namespace ModdingTools.Headless
                     {
                         if (!mod[0].HasAnyScripts() || mod[0].HasCompiledScripts())
                         {
+                            OMMSettings.Instance.AlwaysloadedWorkaround = o.AlwaysLoaded;
                             bool result = mod[0].CookMod(runner, false, false);
                             if (!result)
                             {
